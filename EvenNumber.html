@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding even number</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="justify-content-center d-flex mt-5 mb-3">
+        <button class="btn btn-primary btn-lg " onclick="EvenNumber()"> Check Even Number</button>
+
+        <script>
+            function EvenNumber() {
+                let even = prompt();
+                if (even % 2 == 0) {
+                    document.getElementById('EnterNumber').innerHTML = "true....! it is an Even Number"
+
+                }
+                else {
+                    document.getElementById('EnterNumber').innerHTML = "false....!! it is not an Even Number"
+
+                }
+            }
+        </script>
+    </div>
+    <div class="justify-content-center d-flex mt-3">
+        <h1 id="EnterNumber" class="text-warning"></h1>
+    </div>
+
+</body>
+
+</html>
